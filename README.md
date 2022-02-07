@@ -1,27 +1,26 @@
-# AnalogDigitalClockProject
+## Design Approach
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.1.
+## clock-smart-component :  
 
-## Development server
+1. Handles service interactions for fetching the data (using Rxjs observable/subscription).
+2. Responsible for setting up the varibles which is used by two different components(Analog/Digital) to display UX based on requirement/need.
+3. Sends data to child components using component interaction.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Clock-smart-service
+Implemented common functionlity such as 
+1. Fetching the time every second using Moment
+2. Formatting hh:mm:ss for customer readability/user friendliness Eg:(07:05:09)
 
-## Code scaffolding
+## Styling :
+1. Achieved responsive design using flex-box
+2. mobile/desktop break points are defined globally in styles.scss
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Libraries Used :
+1. RXJS Subscription
+2. Moment js
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Enhancements :
+1. increment/decrement timer
+2. Internatialization of JSON content en/fr
+3. Can add unit test cases
+4. Improve UI for Analog clock

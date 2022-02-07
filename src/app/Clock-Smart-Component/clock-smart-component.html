@@ -1,0 +1,5 @@
+<h1>Analog and Digital Clock</h1>
+<div class="clock" *ngIf="currentTime">
+    <app-analog-clock [dynamicCurrentTime]="currentTime"></app-analog-clock>
+    <app-digital-clock [dynamicCurrentTime]="currentTime"></app-digital-clock>
+</div>

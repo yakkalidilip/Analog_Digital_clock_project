@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+$mobile: '(max-width:899px)';
+$desktop: '(min-width:900px)';
+
+h1 {
+    padding: 50px;
+    font-size: 34px;
+}

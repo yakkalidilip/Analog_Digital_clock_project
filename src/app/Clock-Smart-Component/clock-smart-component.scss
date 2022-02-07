@@ -1,0 +1,16 @@
+@import '../../styles.scss';
+
+
+h1 {
+    text-align: center;
+}
+.clock {
+    display: flex;
+    display: -ms-flexbox;
+    align-items: center;
+    justify-content: space-around;
+    // mobile imported from common style variable from styles.scss
+    @media #{$mobile} {
+        flex-direction: column;
+    }
+}
